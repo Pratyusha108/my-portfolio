@@ -3,12 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="script.js">
+  <title>My Awesome Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-  <h1>Welcome to My Portfolio</h1>
-  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <!-- Header Section with Navigation and Dark Mode Toggle -->
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+    
+    <!-- Dark Mode Toggle Button -->
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <!-- Main Content Section -->
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I’m a passionate data scientist...</p>
+  </section>
+
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://www.linkedin.com/in/PratyushaG" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/Pratyusha108" target="_blank">GitHub</a> |
+    <br><br>
+    <p>Download my <a href="your-resume-link" target="_blank">Resume</a></p>
+  </footer>
+
+  <!-- JavaScript to toggle dark mode -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>
