@@ -98,3 +98,146 @@ body {
     background-color: #555;
   }
   
+
+  /* Hero Section Animation */
+header {
+  animation: fadeIn 2s ease-out;
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+  transform: scale(1.1); /* Makes the button slightly bigger on hover */
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarges the link on hover */
+}
+
+
+/* Project Section */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px;
+}
+
+.project-card {
+  width: 250px;
+  height: 300px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Makes the card slightly bigger */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Adds shadow for hover */
+}
+
+.project-card h3 {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  margin: 0;
+}
+
+.project-card p {
+  padding: 10px;
+  color: #666;
+}
+
+
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.testimonial-card {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-card h4 {
+  margin-top: 10px;
+  color: #333;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+footer a {
+  color: #007BFF;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #0056b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 80%;
+  }
+}
